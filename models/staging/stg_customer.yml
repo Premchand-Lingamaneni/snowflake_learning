@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: stg_customer
+    description: "Staging model for raw customer data"
+    columns:
+      - name: id
+        description: "Primary key for customer"
+        tests:
+          - not_null
+          - unique
+
+      - name: email
+        description: "Customer email address"

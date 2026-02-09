@@ -6,3 +6,8 @@ sources:
     schema: PUBLIC
     tables:
       - name: customer
+        columns:
+          - name: id
+            tests:
+              - not_null
+              - unique
