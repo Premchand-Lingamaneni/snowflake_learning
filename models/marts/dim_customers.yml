@@ -1,3 +1,5 @@
+version: 2
+
 models:
   - name: dim_customers
     description: "Customer dimension table used for analytics and reporting"
@@ -9,5 +11,5 @@ models:
           - not_null
           - unique
 
-      - name: customer_email
+      - name: email
         description: "Email address of the customer"
